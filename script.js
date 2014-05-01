@@ -1,61 +1,34 @@
-	//random number generator
+//random number generator
 function randNum( min, max ) { 
     return Math.random() * ( max - min ) + min;    
 }
  
 $(document).ready(function() {
-	$("#theprogram").click(function(event) {
-		/* Act on the event */
-		$("#welcome").fadeOut('slow')
-		$("#info").fadeIn("slow", function() {
-			$("#info").css('opacity', 1);
-		});
-	});
+    $("#info").hide();
+    $("#socInfo").hide();
+    $("#end").hide();
 
 
-function makeNewPosition(){
-    
-    // Get viewport dimensions (remove the dimension of the div)
-    var h = $(window).height() - 50;
-    var w = $(window).width() - 50;
-    
-    var nh = Math.floor(Math.random() * h);
-    var nw = Math.floor(Math.random() * w);
-    
-    return [nh,nw];    
-    
+    function remove(home, info, socInfo, end){
+        if ()
+    }
+
+	$("#home").click(function(){
+        $("#welcome").fadeIn("slow"); 
+        $("#home").css("text-shadow", "0 0 10px white");
+        $("#info").fadeOut("fast");
+        $("#socInfo").fadeOut("fast");
+        $("#end").fadeOut("fast");
+    })
+});
+
+
+function fade(In, Out, id, speed){
+if(In === true){
+ $(id).fadeIn(speed);
+} else if (Out === true) {
+ $(id).fadeOut(speed);
+}
 }
 
-function animateDiv(){
-    var newq = makeNewPosition();
-    var oldq = $('#who').offset();
-    var speed = calcSpeed([oldq.top, oldq.left], newq);
-    
-    $('#who').animate({ top: newq[0], left: newq[1] }, speed, function(){
-      animateDiv();        
-    });
-    
-};
-
-function calcSpeed(prev, next) {
-    
-    var x = Math.abs(prev[1] - next[1]);
-    var y = Math.abs(prev[0] - next[0]);
-    
-    var greatest = x > y ? x : y;
-    
-    var speedModifier = 0.1;
-
-    var speed = Math.ceil(greatest/speedModifier);
-
-    return speed;
-
-
-    	
-	}
-
-	$("#who").click(function(event) {
-		/* Act on the event */
-		animateDiv();
-	});
-});
+fade(true, false, "#welcome", "fast"); 
