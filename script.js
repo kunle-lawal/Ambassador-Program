@@ -84,7 +84,7 @@ $(document).ready(function(){
         getOut(true, true, true, false);
       }
       
-    }, randNum(1, 10)*1000);
+    }, 1.5*1000);
     
   
  /* $(".proclaim").click(function(){
@@ -101,5 +101,3 @@ $(document).ready(function(){
   
  
 });  
-   
-   
