@@ -1,236 +1,258 @@
-.myClass{
-    border:10px solid red;    
-}
-
-
 body{
-  width:1200px;
-  height:100px;
-  background-color:black;
-  overflow: hidden;
-  transition:all .7s;
+  background-color:#222;
+  height:1900px;
 }
 
 
-#navbar{
-  position:fixed;
-  color:gray;
-  height:50px;
-  width:1250px;
-  left:22px;
-  top:0;
-  border-radius:10px;
-  transition:all .7s;
-  z-index:1;
-  opacity:1;
-  background-color:black;
+.container{
+  
 }
 
 
 .nav{
-  position:relative;
-  font-size:30px;
-  border-radius:10px;
-  top:5px;
-  font-family: Papyrus, fantasy;
-  z-index:-1;
+  text-align: center;
+  margin-top:0.15%;
+  display: inline-block;
+  list-style: none;
+  float:left;
+  padding: 2%; 
+  width:50px;
+  height:13px;
   cursor: pointer;
+  font-size: 16px;
+  font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+
+}
+
+
+.navbar{
+  text-align: center;
+  color:white;
+  width:101%;
+  height:4%;
+  background-color:#222;
+  z-index:2;
+  position:relative;
+  margin-top:-0.9%;
+  margin-left: -0.5%;
+  text-align:center;
+  margin-bottom:1%;
+  box-sizing: border-box;
+}
+
+
+
+.nav:hover{
+  -webkit-box-shadow: inset 1px 10px 18px 3px rgba(0, 0, 0, 0.89);
+  -moz-box-shadow:    inset 1px 10px 18px 3px rgba(0, 0, 0, 0.89);
+  box-shadow:         inset 1px 10px 18px 3px rgba(0, 0, 0, 0.89);
+  text-shadow:0 0 10px white;
+  opacity:0.8;
 }
 
 
 #home{
-  position: absolute; 
-  left:30px;
-  color:white;
-  text-shadow:0px 0px 10px white;
-  cursor:pointer;
-  z-index: 2px;
-  transition:all .7s;
-}
-
-
-#signup{
-  position: absolute;
-  left:229px;
-  cursor:pointer;
-  z-index: 2px;
-}
-
-
-#about{
-  position: absolute;
-  left:480px;
-  cursor:pointer;
-  z-index: 2px;
-  transition:all .7s;
-}
-
-
-#theprogram{
-  position: absolute;
-  left:690px;
-  cursor:pointer;
-  z-index: 2px;
+  
 }
 
 
 #start{
-  position: absolute;
-  left:982px;
-  cursor:pointer;
-  z-index: 2px;
+ width:80px;
 }
 
 
-#wrap{
+.welcome{
   position:relative;
-  top:100px;
-}
-
-
-.sections{
-  width:1250px;
-  position:absolute;
-  height:650px;
-  color: #003366;
-  background-color:#141414;
-  border-radius:20px;
+  margin-top: -1%;
+  width:101%;
+  height:38%;
+  margin-left: -0.5%;
+  z-index:1;
   text-align:center;
-  top:-40px;
-  left:7px;
-  opacity:0.1;
-  transition:all .7s;
+  background-color: rgb(231, 218, 63);
+  background-image:url("");
+  background-repeat:no-repeat;
+  background-size:cover;
+  opacity:0.9;
+  border-top:1px solid black;
 }
 
 
-#welcome{
-  opacity:1;
-  transition:all .7s;
+.welcome h1{
+  font-weight: bold;
+  color:#ffffff;
+  font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+  font-size:70px;
+  text-shadow:0 0 3px black; 
+  margin-left:-10%;
+  margin-top:15%;
+  margin-bottom:-10%; 
 }
 
-#welcomeHead{
-  color:white;
-  font-size:100px;
-  font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
-  transition:all .7s;
-}
 
 #seperate{
-  position:inherit;
   bottom:280px;
-  left:376px;
-  border:1px solid #003366;
-  width:550px;
+  border:1px outset #4F94CD;
   transition:all .7s;
+  width:0%;
+  margin-top:11%;
+  margin-left:30%;
+  margin-bottom:-11%
 }
 
 
-
-#subWelcome{
-  position:inherit;
-  left:240px;
-  color:#CCCC99;
-  font-size:28px;
-  cursor:pointer;
-  width:780px;
-  font-family: Copperplate, "Copperplate Gothic Light", fantasy;
-  transition:all .7s;
+.welcome p{
+  font-size:20px;
+  color:#DBE8F9;
+ font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
+  text-shadow:0 0 3px black;
+  margin-top:13%;
 }
-
-
 
 
 #info{
-  opacity:1;
-  
+  float:left;
+  height:40.6%;
+  margin-top: -1%;
+  width:101%;
+  margin-left: -0.5%;
+  z-index:1;
+  background-color:rgb(192, 135, 62);
 }
 
 
-#list{
-  border:1px solid red;
+.infocontainer{
+  width:62%;
+  height:204px;
+  margin-left:10%;
+  margin-top:5%;
+  padding:200px;
+  transition: all 0.7s;
+  display:inline-block;
+
 }
 
 
-ol{
-  list-style-type:none
-}
-#who{
-  height:100px;
+.proclaim{
+  position:relative;
+  color:white;
+  text-align:center;
   width:100px;
-  top:0px;
-  left:796px;
-  border: 1px solid #003366;
-  cursor: pointer;
+  height:100px;
+  transition: all 0.7s;
+  display:inline-block;
+ font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+  font-size:32px;
+  cursor:pointer;
+  margin:1px;
+  background-color:black;
+  border-radius:4px;
+}
+
+
+#who{
+  transition: all 0.7s;
+  margin-left:10%;
 }
 
 
 #what{
-  height:100px;
-  width:100px;
-  top:0px;
-  border: 1px solid #003366;
+  transition: all 0.7s;
+  margin-left:10%
 }
 
 
 #why{
-  height:100px;
-  width:100px;
-  bottom:0px;
-  left:796px;
-  bottom: 1px solid #003366;
+  transition: all 0.7s;
+  margin-left:10%;
 }
 
 
 #how{
- width:100px;
- height:100px;
- bottom:0px;
- left:0px; 
- border: 1px solid #003366;
+  transition: all 0.7s;
+  margin-left:10%;
 }
 
-/*The class for WHO WHAT WHERE WHEN AND WHY*/
-.we{
-  position:relative;
-  top:200px;
-  opacity:0;
+.proclaim:hover {
+  /*transform*/
+  -webkit-transform:perspective(800px) rotate3d(1, 0, 0, 17deg);
+  -moz-transform:perspective(800px) rotate3d(1, 0, 0, 17deg);
+  -ms-transform:perspective(800px) rotate3d(1, 0, 0, 17deg);
+  -o-transform:perspective(800px) rotate3d(1, 0, 0, 17deg);
+  transform:perspective(800px) rotate3d(1, 0, 0, 17deg);
+  
+  opacity:0.7;
 }
-
 
 
 #socInfo{
-  color:white;
-  opacity:1;
-  text-align:center;
-  
-}
-
-
-#WIS{
   position:relative;
-  font-size:100px;
-  font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
-  top:100px;
+  top: 0;
+  float:left;
+  width:100%;
+  height:60%;
+  z-index:1;
+  margin-top: 1%;
+  width:101%;
+  margin-left: -0.6%;
+  text-align:center;
+  font-size:40px;
+  font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+  opacity:0.7;
+  border: 1px solid red;
 }
 
-#subInfo{
-  position:absolute;
-  left:480px;
-  width:600px;
-  top:380px;
-  font-size:25px;
-  font-family:Copperplate, "Copperplate Gothic Light", fantasy;
-  color:#CCCC99;
+
+#socInfoContainer{
+  color:#8D8D8D;
+  margin-top:10%;
 }
 
-.socInfoTags{
-  color:#003366; 
-  font-size:29px;
+
+#socInfoContainer p{
+  font-size:20px;
 }
+
+
+#smart{
+  color:black;
+}
+
+
+#engagin{
+  color:black;
+}
+
+
+#games{
+  color:black;
+}
+
+
+#SSF{
+  color:black;
+}
+
+
+
+.testimony{
+  font-size:30px;
+  color:white;
+  cursor:pointer;
+  transition:all 0.7s;
+  font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+}
+
+
+.testimony:hover{
+  color:#5F625A;
+  opacity:0.7;
+}
+
 
 #end{
-  opacity:1;
-  font-size:100px;
   color:white;
-  
+  background-color: black;
+  height:17%;
+  margin-top:24%;
 }
