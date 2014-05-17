@@ -9,12 +9,12 @@ $(document).ready(function(){
 }
 
 
-
   function changePages(){
     $("#home").click(function(event) {
       $(this).css("box-shadow", "inset 1px 10px 18px 3px rgba(0, 0, 0, 0.89)");
     });
   }
+
 
   changePages();
 
@@ -73,7 +73,9 @@ $(document).ready(function(){
           color:"#5f625a",
           opacity:"0.7"
         });
+
         getOut(true, false, true, true);
+
       } else if(randTestimo <= 3 && randTestimo >= 2.09){
         $("#coolTool").css({
           color:"#5f625a",
