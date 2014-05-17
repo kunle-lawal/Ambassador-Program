@@ -1,251 +1,310 @@
-.myClass{
-    border:10px solid red;    
-}
-
-
 body{
-  width:1500px;
-  height:100px;
-  background-color:black;
-  overflow: hidden;
-  transition:all .7s;
+  background-color:#222;
+  height:1900px;
+  /*background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1NiIgaGVpZ2h0PSIxMDAiPgo8cmVjdCB3aWR0aD0iNTYiIGhlaWdodD0iMTAwIiBmaWxsPSIjMWUyMDIxIj48L3JlY3Q+CjxwYXRoIGQ9Ik0yOCA2NkwwIDUwTDAgMTZMMjggMEw1NiAxNkw1NiA1MEwyOCA2NkwyOCAxMDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzI3MmMyZiIgc3Ryb2tlLXdpZHRoPSIxIj48L3BhdGg+Cjwvc3ZnPg==")*/
+  transition:all 0.7s;
 }
 
 
-#navbar{
-  position:fixed;
-  color:gray;
-  height:50px;
-  width:1550px;
-  left:22px;
-  top:0;
-  border-radius:10px;
-  transition:all .7s;
-  z-index:1;
-  opacity:1;
-  background-color:black;
+.container{
+  
+}
+
+
+#style{
 }
 
 
 .nav{
-  position:relative;
-  font-size:30px;
-  border-radius:10px;
-  top:5px;
-  font-family: Papyrus, fantasy;
-  z-index:-1;
+  text-align: center;
+  margin-top:0.6%;
+  display: inline-block;
+  list-style: none;
+  float:left;
+  padding: 2%; 
+  width:80px;
+  height:13px;
   cursor: pointer;
+  font-size: 17px;
+  font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+  transition:all 0.7s;
+  z-index: -2;
+}
+
+
+.navbar{
+  text-align: center;
+  color:white;
+  width:101%;
+  height:6%;
+  background-color:#3E9AB4;
+  z-index:2;
+  position:relative;
+  margin-top:-1.2%;
+  margin-left: -0.5%;
+  text-align:center;
+  margin-bottom:1%;
+  box-sizing: border-box;
+  transition:all 0.4s;
+  border-bottom: 1px inset black
+}
+
+/*text-align: center;
+  color:white;
+  width:101%;
+  height:6%;
+  background-color:#3E9AB4;
+  z-index:2;
+  position:fixed;
+  margin-top:-1.2%;
+  margin-left: -0.5%;
+  text-align:center;
+  margin-bottom:1%;
+  box-sizing: border-box;
+  transition:all 0.4s;
+  border-bottom: 1px inset black;*/
+
+
+
+.nav:hover{
+  text-shadow:0 0 10px white;
+
 }
 
 
 #home{
-  left:30px;
-  color:white;
-  text-shadow:0px 0px 10px white;
-  cursor:pointer;
-  z-index: 2px;
-  transition:all .7s;
+  
 }
 
-
-#login{
-  left:450px;
-  cursor:pointer;
-  border: 100% solid red;
-  z-index: 2px;
-  transition:all .7s;
-}
-
-
-#about{
-  left:230px;
-  cursor:pointer;
-  z-index: 2px;
-  transition:all .7s;
-}
-
-
-#signup{
-  left:69px;
-  cursor:pointer;
-  z-index: 2px;
-}
-
-
-#about{
-  left:450px;
-  cursor:pointer;
-  z-index: 2px;
-}
-
-
-#theprogram{
-  left:630px;
-  cursor:pointer;
-  z-index: 2px;
-}
-
-
-#start{
-  left:732px;
-  cursor:pointer;
-  z-index: 2px;
-}
-
-
-#wrap{
-  position:relative;
-  top:100px;
-}
-
-
-.sections{
-  width:1550px;
-  position:absolute;
-  height:650px;
-  color: #003366;
-  background-color:#141414;
-  border-radius:20px;
-  text-align:center;
-  top:-40px;
-  left:18px;
-  opacity:0.1;
-  transition:all .7s;
-}
-
-
-#welcome{
-  opacity:1;
-}
-
-
-#welcomeHead{
-  color:white;
-  font-size:100px;
-  font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
-  transition:all .7s;
-}
-
-#seperate{
-  position:absolute;
-  bottom:280px;
-  left:476px;
-  border:1px solid #003366;
-  width:600px;
-  transition:all .7s;
-}
-
-
-
-#subWelcome{
-  position:absolute;
-  left:290px;
-  color:#CCCC99;
-  font-size:28px;
-  cursor:pointer;
-  width:980px;
-  font-family: Copperplate, "Copperplate Gothic Light", fantasy;
-  transition:all .7s;
-}
-
-
-
-
-#info{
-  opacity:0;
+img{
   
 }
 
 
-#list{
-  border:1px solid red;
+#moreInfo{
+  border:1px solid black;
+  width:0;
+  height:0px;
+  margin-left: 27%;
+  margin-top:-2.5%;
+  background-color:black;
+  opacity: 0.8;
 }
 
 
-ol{
-  list-style-type:none
+.welcome{
+  position:relative;
+  margin-top: 1.4%;
+  width:101%;
+  height:38%;
+  margin-left: -0.5%;
+  z-index:10;
+  text-align:center;
+  background-repeat:no-repeat;
+  background-size:cover;
+  opacity:0.7;
+  transition:all 0.7s;
 }
-#who{
-  height:100px;
-  width:100px;
-  top:0px;
-  left:796px;
-  border: 1px solid #003366;
+
+
+.welcome h1{
+  font-weight: bold;
+  color:#ffffff;
+  font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+  font-size:70px;
+  text-shadow:0 0 3px black; 
+  margin-top:8%;
+  margin-bottom:-10%; 
+  transition:all 1s;
+}
+
+
+#seperate{
+  bottom:280px;
+  border:1px outset #4F94CD;
+  transition:all .7s;
+  width:0%;
+  margin-top:11%;
+  margin-left:30%;
+  margin-bottom:-11%
+}
+
+
+.welcome p{
+  font-size:20px;
+  color:#DBE8F9;
+ font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
+  text-shadow:0 0 3px black;
+  margin-top:13%;
+}
+
+
+#arrow{
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 20px solid white;
+  margin-left: 70%;
+  margin-top: 30%;
   cursor: pointer;
 }
 
 
-#what{
+#info{
+  float:left;
+  height:40.6%;
+  margin-top: -1%;
+  width:101%;
+  margin-left: -0.5%;
+  z-index:1;
+  background-color:rgb(192, 135, 62);
+  opacity:0.8;
+}
+
+
+.infocontainer{
+  float:left;
   height:100px;
+  margin-top: 1%;
+  width:700px;
+  margin-top:21%;
+  margin-bottom: 23%;
+  margin-left: 23%;
+  margin-right: 23%;
+  transition: all 0.7s;
+  display:inline-block;
+}
+
+
+.proclaim{
+  color:white;
+  text-align:center;
   width:100px;
-  top:0px;
-  border: 1px solid #003366;
+  height:100px;
+  transition: all 0.7s;
+  display:inline-block;
+ font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+  font-size:32px;
+  cursor:pointer;
+  background-color:black;
+  border-radius:4px;
+  -webkit-box-shadow: 7px 7px 5px 1px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 7px 7px 5px 1px rgba(50, 50, 50, 0.75);
+  box-shadow: 7px 7px 5px 1px rgba(50, 50, 50, 0.75);
+}
+
+
+#who{
+  transition: all 0.7s;
+  margin-left:10%;
+}
+
+
+#what{
+  transition: all 0.7s;
+  margin-left:10%
 }
 
 
 #why{
-  height:100px;
-  width:100px;
-  bottom:0px;
-  left:796px;
-  bottom: 1px solid #003366;
+  transition: all 0.7s;
+  margin-left:10%;
 }
 
 
 #how{
- width:100px;
- height:100px;
- bottom:0px;
- left:0px; 
- border: 1px solid #003366;
+  transition: all 0.7s;
+  margin-left:10%;
 }
 
+.proclaim:hover {
+  /*transform*/
+  -webkit-transform:perspective(800px) rotate3d(1, 0, 0, 17deg);
+  -moz-transform:perspective(800px) rotate3d(1, 0, 0, 17deg);
+  -ms-transform:perspective(800px) rotate3d(1, 0, 0, 17deg);
+  -o-transform:perspective(800px) rotate3d(1, 0, 0, 17deg);
+  transform:perspective(800px) rotate3d(1, 0, 0, 17deg);
+  
 
-.we{
-  position:relative;
-  top:200px;
-  opacity:0;
+  -webkit-box-shadow: 24px 24px 5px 1px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 24px 24px 5px 1px rgba(50, 50, 50, 0.75);
+  box-shadow: 24px 24px 5px 1px rgba(50, 50, 50, 0.75);
+  opacity:0.7;
 }
-
 
 
 #socInfo{
-  color:white;
-  opacity:0;
-  text-align:center;
-  
-}
-
-
-#WIS{
   position:relative;
-  font-size:100px;
-  font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
-  top:100px;
+  top: 0;
+  float:left;
+  width:100%;
+  height:40%;
+  z-index:-1;
+  margin-top: -1%;
+  width:101%;
+  margin-left: -0.6%;
+  text-align:center;
+  font-size:40px;
+  font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+  opacity:0.7;
+  background-color:white;
+  transition:all 0.4s;
 }
 
-#subInfo{
-  position:absolute;
-  left:480px;
-  width:600px;
-  top:380px;
-  font-size:25px;
-  font-family:Copperplate, "Copperplate Gothic Light", fantasy;
-  color:#CCCC99;
+
+#socInfoContainer{
+  color:#8D8D8D;
+  margin-top:10%;
 }
 
-.socInfoTags{
-  color:#003366; 
-  font-size:29px;
+
+#socInfoContainer p{
+  font-size:20px;
 }
+
+
+#smart{
+  color:black;
+}
+
+
+#engagin{
+  color:black;
+}
+
+
+#games{
+  color:black;
+}
+
+
+#SSF{
+  color:black;
+}
+
+
+
+.testimony{
+  font-size:30px;
+  color:white;
+  cursor:pointer;
+  transition:all 0.7s;
+  font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+}
+
+
+.testimony:hover{
+  color:#5F625A;
+  opacity:0.7;
+}
+
 
 #end{
-  opacity:0;
-  font-size:100px;
   color:white;
-  
+  background-color: black;
+  height:19%;
+  margin-top:17%;
+  opacity: 0.8;
+  transition:all 0.4s;
 }
-
-
-
-
