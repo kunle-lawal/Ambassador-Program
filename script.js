@@ -38,25 +38,25 @@ $(document).ready(function(){
         if(easy === true){
           $("#easy").css({
             color:"#ffffff",
-            opacity:"0"
+            opacity:"0.1"
           });
         }
         if(solution === true){
           $("#solution").css({
-            color:"#ffffff",
-            opacity:"0"
+            color:"#ffffff",           
+            opacity:"0.1"
           });
         }
         if(coolTool === true){
           $("#coolTool").css({
             color:"#ffffff",
-            opacity:"0"
+            opacity:"0.1"
           });
         }
         if(loving === true){
           $("#loving").css({
             color:"#ffffff",
-            opacity:"0"
+            opacity:"0.1"
           });
         }
       }
@@ -134,16 +134,16 @@ $(document).ready(function(){
   window.setInterval(function(){
       var top = $(document).scrollTop()
 
-          if(top >= 100){
+          if(top >= 300){
           $(".navbar").css({
-            "height": '10%',
+            "height": '12%',
             "margin-top": '-8%',
             "position": "fixed"
           });
           $(".nav").css('margin-top', '-1.4%');
         } else {
           $(".navbar").css({
-            "height": '6%',
+            "height": '6.2%',
             "margin-top": '-1.2%',
             "position": "relative"
           });

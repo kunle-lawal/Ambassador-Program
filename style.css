@@ -15,27 +15,64 @@ body{
 }
 
 
+/*.navbarFix{
+  text-align: center;
+  color:white;
+  width:100.99%;
+
+  height:12%;
+  background-color:#3E9AB4;
+  z-index:2;
+  position:fixed;
+  margin-top:-8%;
+  margin-left: -0.5%;
+  text-align:center;
+  margin-bottom:1%;
+  box-sizing: border-box;
+  transition:all 0.4s;
+  border-bottom: 1px inset black;
+  z-index: 20;
+}
+
+
+.navFix{
+  margin-top:-1.4%;
+  text-align: center;
+  display: inline-block;
+  list-style: none;
+  float:left;
+  padding: 2.5%; 
+  width:85px;
+  height:13px;
+  cursor: pointer;
+  font-size: 17px;
+  font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+  transition:all 0.7s;
+  z-index: 20;
+}
+*/
+
 .nav{
   text-align: center;
   margin-top:0.6%;
   display: inline-block;
   list-style: none;
   float:left;
-  padding: 2%; 
-  width:80px;
+  padding: 2.5%; 
+  width:85px;
   height:13px;
   cursor: pointer;
   font-size: 17px;
   font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
   transition:all 0.7s;
-  z-index: -2;
+  z-index: 2;
 }
 
 
 .navbar{
   text-align: center;
   color:white;
-  width:101%;
+  width:100.99%;
 
   height:6%;
   background-color:#3E9AB4;
@@ -47,7 +84,6 @@ body{
   margin-bottom:1%;
   box-sizing: border-box;
   transition:all 0.4s;
-  border-bottom: 1px inset black
 }
 
 /*text-align: center;
@@ -67,18 +103,11 @@ body{
 
 
 .nav:hover{
-  -webkit-box-shadow:  1px 10px 18px 3px rgba(0, 0, 0, 0.89);
-  -moz-box-shadow:     1px 10px 18px 3px rgba(0, 0, 0, 0.89);
-  box-shadow:          1px 10px 18px 3px rgba(0, 0, 0, 0.89);
   text-shadow:0 0 10px white;
   opacity:0.8;
-  height:150px;
-  z-index: -2;
-
 }
 .nav:hover{
   text-shadow:0 0 10px white;
-
 }
 
 
@@ -95,10 +124,10 @@ img{
 .welcome{
   position:relative;
   margin-top: 1.4%;
-  width:101%;
+  width:100.8%;
   height:38%;
   margin-left: -0.5%;
-  z-index:10;
+  z-index:1;
   text-align:center;
   background-repeat:no-repeat;
   background-size:cover;
@@ -152,8 +181,9 @@ img{
 
 
 #info{
+  position: relative;
   float:left;
-  height:40.6%;
+  height:45.6%;
   margin-top: -1%;
   width:101%;
   margin-left: -0.5%;
@@ -164,16 +194,7 @@ img{
 
 
 .infocontainer{
-  float:left;
-  height:100px;
-  margin-top: 1%;
-  width:700px;
-  margin-top:21%;
-  margin-bottom: 23%;
-  margin-left: 23%;
-  margin-right: 23%;
-  transition: all 0.7s;
-  display:inline-block;
+  margin-left: 16.5%;
 }
 
 
@@ -183,6 +204,7 @@ img{
   width:100px;
   height:100px;
   transition: all 0.7s;
+  margin-top: 23%;
   display:inline-block;
  font-family: Copperplate, "Copperplate Gothic Light", fantasy;
   font-size:32px;
@@ -236,26 +258,28 @@ img{
 
 #socInfo{
   position:relative;
-  top: 0;
-  float:left;
-  width:100%;
-  height:40%;
+  float: left;
+  margin-top: -0.1%;
+  width: 101.1%;
+  height: 45%;
   z-index:-1;
-  margin-top: -1%;
-  width:101%;
   margin-left: -0.6%;
   text-align:center;
   font-size:40px;
   font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
-  opacity:0.7;
+  opacity:0.8;
   background-color:white;
   transition:all 0.4s;
 }
 
 
 #socInfoContainer{
-  color:#8D8D8D;
   margin-top:10%;
+}
+
+
+#socInfoContainer h1 {
+  color:black;
 }
 
 
@@ -265,7 +289,7 @@ img{
 
 
 #smart{
-
+  color: black;
 }
 
 
@@ -304,7 +328,16 @@ img{
   color:white;
   background-color: black;
   height:19%;
-  margin-top:17%;
-  opacity: 0.8;
+  margin-top:10%;
+  opacity: 1;
   transition:all 0.4s;
 }
+
+
+/*.fancy{
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 20px solid white;
+}*/
