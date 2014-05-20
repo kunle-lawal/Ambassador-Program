@@ -29,7 +29,41 @@ $(document).ready(function(){
   }, 1000/10);
 
 
-  $("#welcome").css('font-size', '70px');
+  function persuade(){
+    //Hide all the persuading divs
+    $("#whatIs").hide();
+    $("#whoUse").hide();
+    $("#whyUse").hide();
+    $("#howUse").hide();
+    $("#arrow").hide();
+    slow ="1000"
+      window.setTimeout(function(){
+        $("#whatIs").fadeIn(slow);
+      }, 3000);
+
+      window.setTimeout(function(){
+        $("#whoUse").fadeIn(slow);
+      }, 4000);
+
+      window.setTimeout(function(){
+        $("#whyUse").fadeIn(slow);
+      }, 5000);
+
+      window.setTimeout(function(){
+        $("#howUse").fadeIn(slow);
+      }, 6000);
+
+      window.setTimeout(function(){
+        window.setInterval(function(){
+        $("#arrow").fadeIn(slow);
+        $("#arrow").effect("bounce", { times:5 }, 2000);
+        },1000);
+      },6000);
+
+  };
+
+//run the persuade function
+persuade()
   
     window.setInterval(function(){
       var randTestimo = randNum(0, 4);
@@ -60,7 +94,6 @@ $(document).ready(function(){
           });
         }
       }
-      
       
       if(randTestimo <= 1){
         $("#easy").css({
@@ -150,10 +183,13 @@ $(document).ready(function(){
           $(".nav").css('margin-top', '0.6%');
         }
         
-        $("#arrow").effect("bounce", { times:3 }, 3000);
+        
         
     }, 1000);
 
-       
+    
+  $("#signup").click(function(){
+    window.open( 'https://docs.google.com/forms/d/1s2Efu7jlggVbvEHfJuJy50OY5h1fgRkHRB8rS-XEzvo/viewform?usp=send_form');
+  });
 
 });

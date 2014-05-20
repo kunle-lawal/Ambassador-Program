@@ -65,7 +65,7 @@ body{
   font-size: 17px;
   font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
   transition:all 0.7s;
-  z-index: 2;
+  z-index: 1;
 }
 
 
@@ -75,7 +75,7 @@ body{
   width:100.99%;
 
   height:6%;
-  background-color:#3E9AB4;
+  background-color:rgb(64, 157, 184);
   z-index:2;
   position:relative;
   margin-top:-1.2%;
@@ -168,6 +168,12 @@ img{
 }
 
 
+.persuade{
+  color:white;
+  font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+}
+
+
 #arrow{
   width: 0;
   height: 0;
@@ -175,7 +181,7 @@ img{
   border-right: 10px solid transparent;
   border-top: 20px solid white;
   margin-left: 70%;
-  margin-top: 30%;
+  margin-top: 10%;
   cursor: pointer;
 }
 
@@ -188,8 +194,8 @@ img{
   width:101%;
   margin-left: -0.5%;
   z-index:1;
-  background-color:rgb(192, 135, 62);
-  opacity:0.8;
+  background-color:white;
+  opacity:1;
 }
 
 
@@ -262,13 +268,13 @@ img{
   margin-top: -0.1%;
   width: 101.1%;
   height: 45%;
-  z-index:-1;
+  z-index:1;
   margin-left: -0.6%;
   text-align:center;
   font-size:40px;
   font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
   opacity:0.8;
-  background-color:white;
+  background-color:gray;
   transition:all 0.4s;
 }
 
