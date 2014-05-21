@@ -138,8 +138,8 @@ persuade()
         alert("Hi");  
       }
   
-      var click = ["#who", "#what", "#why", "#how"];
-      for (var i = 0; i < click.length; i++) {
+  /*var click = ["#who", "#what", "#why", "#how"];
+    for (var i = 0; i < click.length; i++) {
         $(click[i]).click(function(event) {
       width = 0
       height = 0
@@ -148,7 +148,7 @@ persuade()
         $("#moreInfo").css('height', height + "px");
         
         
-        if (height >= 100) {
+        if (height >= 20) {
             height = 100;
             width += 4;
         
@@ -161,10 +161,74 @@ persuade()
       }, 1000/10)
       
     });
-      };
+  };*/
 
 
-  window.setInterval(function(){
+var index = 0;
+var text = "This program is geared towards students who wish to see tehnoology grow and shape the future, students like you!" ;
+var text2 = "The ambassador program is meant to assist socrative classrooms by deligating student to help in their classrooms with socrative related issues"
+var text3 = "Why is this important? Well your future, this program can be a part of your college resume, you can gain valuable skills, and be a part of a something BIG!"
+var text4 = "Feeling pumped, well scroll down the page to sign up and become a part of this valuable expirience, Get Started Today!"
+// Here you can put in the text you want to make it type.
+//first we do who 
+who = function(){
+  document.getElementById('moreInfo').innerHTML += text.charAt(index);
+  index += 1;
+  var t = setTimeout('who()',40);
+  // The time taken for each character here is 100ms. You can change it if you want.
+}
+
+//Now what
+what = function(){
+  document.getElementById('moreInfo').innerHTML += text2.charAt(index);
+  index += 1;
+  var t2 = setTimeout('what()',40);
+  // The time taken for each character here is 100ms. You can change it if you want.
+}
+
+//now why
+why = function(){
+  document.getElementById('moreInfo').innerHTML += text3.charAt(index);
+  index += 1;
+  var t3 = setTimeout('why()',40);
+  // The time taken for each character here is 100ms. You can change it if you want.
+}
+
+//now how
+how = function(){
+  document.getElementById('moreInfo').innerHTML += text4.charAt(index);
+  index += 1;
+  var t4 = setTimeout('how()',40);
+  // The time taken for each character here is 100ms. You can change it if you want.
+}
+
+//Now make click atrributes for all the buttons
+$("#who").click(function(event) {
+  who();
+
+});
+
+$("#what").click(function(event) {
+  what();
+  document.getElementById('moreInfo').innerHTML += text2.charAt(index);
+  index += 1;
+  var t2 = setTimeout('what()',40);
+});
+
+$("#why").click(function(event) {
+  why();
+
+});
+
+$("#how").click(function(event) {
+  how();
+
+});
+
+
+
+
+topCheck = window.setInterval(function(){
       var top = $(document).scrollTop()
 
           if(top >= 300){

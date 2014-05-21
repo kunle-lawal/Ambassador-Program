@@ -181,8 +181,19 @@ img{
   border-right: 10px solid transparent;
   border-top: 20px solid white;
   margin-left: 70%;
-  margin-top: 10%;
+  margin-top: 5%;
   cursor: pointer;
+}
+
+
+#moreInfo{
+  color:green;
+  background-color:white;
+  width:48%;
+  height:20px;
+  margin-left: 16.5%;
+  text-align:center;
+  font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
 }
 
 
@@ -210,7 +221,7 @@ img{
   width:100px;
   height:100px;
   transition: all 0.7s;
-  margin-top: 23%;
+  margin-top: 18%;
   display:inline-block;
  font-family: Copperplate, "Copperplate Gothic Light", fantasy;
   font-size:32px;
