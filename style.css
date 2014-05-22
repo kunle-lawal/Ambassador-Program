@@ -115,6 +115,11 @@ body{
   
 }
 
+#theprogram{
+  text-decoration: none;
+  color:white;
+}
+
 
 img{
   
@@ -187,13 +192,18 @@ img{
 
 
 #moreInfo{
-  color:green;
-  background-color:white;
-  width:48%;
-  height:20px;
+  color:white;
+  background-color:black;
+  width:0%;
+  height:0px;
   margin-left: 16.5%;
+  margin-top:10%;
+  margin-bottom: -5%;
+  border-radius: 5px;
   text-align:center;
-  font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+  box-shadow:-1px -1px 8px 2px rgba(50, 50, 50, 0.71);
+  font-size: 26px;
+  font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
 }
 
 
@@ -285,7 +295,7 @@ img{
   font-size:40px;
   font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
   opacity:0.8;
-  background-color:gray;
+  background-image:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1NiIgaGVpZ2h0PSIxMDAiPgo8cmVjdCB3aWR0aD0iNTYiIGhlaWdodD0iMTAwIiBmaWxsPSIjMWUyMDIxIj48L3JlY3Q+CjxwYXRoIGQ9Ik0yOCA2NkwwIDUwTDAgMTZMMjggMEw1NiAxNkw1NiA1MEwyOCA2NkwyOCAxMDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzI3MmMyZiIgc3Ryb2tlLXdpZHRoPSIxIj48L3BhdGg+Cjwvc3ZnPg==");
   transition:all 0.4s;
 }
 
@@ -296,7 +306,7 @@ img{
 
 
 #socInfoContainer h1 {
-  color:black;
+  color:#6B9D36;
 }
 
 
@@ -306,22 +316,22 @@ img{
 
 
 #smart{
-  color: black;
+  color: #EB7F28;
 }
 
 
 #engagin{
-  color:black;
+  color:#EB7F28;
 }
 
 
 #games{
-  color:black;
+  color:#EB7F28;
 }
 
 
 #SSF{
-  color:black;
+  color:#EB7F28;
 }
 
 

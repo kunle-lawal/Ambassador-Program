@@ -1,0 +1,151 @@
+ body{
+  background-color:#ECD12D;
+  height:1000px;
+}
+
+
+
+
+.nav{
+  text-align: center;
+  margin-top:0.6%;
+  display: inline-block;
+  list-style: none;
+  float:left;
+  padding: 2.5%; 
+  width:85px;
+  height:13px;
+  cursor: pointer;
+  font-size: 17px;
+  font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+  transition:all 0.7s;
+  z-index: 2;
+}
+
+
+.navbar{
+  text-align: center;
+  color:white;
+  width:101.5%;
+
+  height:10%;
+  background-color:#3E9AB4;
+  z-index:2;
+  position:relative;
+  margin-top:-1.2%;
+  margin-left: -0.9%;
+  text-align:center;
+  margin-bottom:1%;
+  box-sizing: border-box;
+  transition:all 0.4s;
+}
+
+
+.nav:hover{
+  text-shadow:0 0 10px white;
+  opacity:0.8;
+}
+
+
+#signup{
+  text-shadow:0 0 10px white;
+  opacity:0.8;
+}
+
+
+#ready{
+  position:relative;
+  background-color: ;
+  width:101%;
+  margin-top:-3.5%;
+  margin-left:-0.6%;
+  text-align:center; 
+  height:75%;
+  border:1px solid transparent;
+}
+
+
+#readyContain{
+  margin-top:8%;
+  margin-bottom:-10%;
+}
+
+
+#readyContain h1{
+  font-size:70px;
+  font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+}
+
+
+span{
+  color:#ffffff;
+  text-shadow:0 0 10px white;
+}
+
+
+#readyContain h1{
+  font-size:70px;
+  font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif; 
+}
+
+
+#seperate{
+  border:1px outset #4F94CD;
+  transition:all .7s;
+  width:0%;
+  margin-left:30%; 
+}
+
+
+#signUpInfo{
+  font-size:20px;
+  font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+  font-weight:900;
+}
+
+
+/*#form{
+  border:1px solid #3E9AB4;
+  width:120px;
+  height:36px;
+  font-size:30px;
+  border-radius:15px;
+  background-color:#4F94CD;
+  cursor:pointer;
+  font-family:Copperplate, "Copperplate Gothic Light", fantasy;
+    background: rgb(30, 50, 230);
+    background: -moz-linear-gradient(30deg, rgb(30, 50, 230) 30%, rgb(90, 140, 250) 70%);
+    background: -webkit-linear-gradient(30deg, rgb(30, 50, 230) 30%, rgb(90, 140, 250) 70%);
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 0.75);
+-moz-box-shadow:    2px 2px 5px 0px rgba(50, 50, 50, 0.75);
+box-shadow:         2px 2px 5px 0px rgba(50, 50, 50, 0.75);
+}
+
+#form:hover{
+  -webkit-box-shadow: inset 0px 0px 11px 4px rgba(50, 50, 50, 0.89);
+  -moz-box-shadow:    inset 0px 0px 11px 4px rgba(50, 50, 50, 0.89);
+  box-shadow:         inset 0px 0px 11px 4px rgba(50, 50, 50, 0.89);
+  border:1px solid #3E9AB4;
+  text-shadow: 0 0 10px white;
+}*/
+
+
+a{
+  text-decoration: none;
+  color:black;
+  font-size:40px;
+}
+
+a:hover{
+  color:#ffffff;
+}
+
+
+footer{
+  background-color:black;
+  width:101%;
+  margin-left:-0.52%;
+  height:20%;
+}
+
+

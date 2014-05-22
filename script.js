@@ -54,7 +54,7 @@ $(document).ready(function(){
       }, 6000);
 
       window.setTimeout(function(){
-        window.setInterval(function(){
+       moveArrow = window.setInterval(function(){
         $("#arrow").fadeIn(slow);
         $("#arrow").effect("bounce", { times:5 }, 2000);
         },1000);
@@ -72,58 +72,58 @@ persuade()
         if(easy === true){
           $("#easy").css({
             color:"#ffffff",
-            opacity:"0.1"
+            opacity:"0"
           });
         }
         if(solution === true){
           $("#solution").css({
             color:"#ffffff",           
-            opacity:"0.1"
+            opacity:"0"
           });
         }
         if(coolTool === true){
           $("#coolTool").css({
             color:"#ffffff",
-            opacity:"0.1"
+            opacity:"0"
           });
         }
         if(loving === true){
           $("#loving").css({
             color:"#ffffff",
-            opacity:"0.1"
+            opacity:"0"
           });
         }
       }
       
       if(randTestimo <= 1){
         $("#easy").css({
-          color:"#5f625a",
-          opacity:"0.7"
+          color:"#853482",
+          opacity:"0.9"
         });
         getOut(false, true, true, true);
       } else if(randTestimo <= 2 && randTestimo >= 1.09){
         $("#solution").css({
-          color:"#5f625a",
-          opacity:"0.7"
+          color:"#853482",
+          opacity:"0.9"
         });
 
         getOut(true, false, true, true);
 
       } else if(randTestimo <= 3 && randTestimo >= 2.09){
         $("#coolTool").css({
-          color:"#5f625a",
-          opacity:"0.7"
+          color:"#853482",
+          opacity:"0.9"
         });
         getOut(true, true, false, true);
       } else if(randTestimo <= 4 && randTestimo >= 3.09){
         $("#loving").css({
-          color:"#5f625a",
-          opacity:"0.7"
+          color:"#853482",
+          opacity:"0.9"
         });
         getOut(true, true, true, false);
       }
       
-    }, 1.5*1000);
+    }, 1.8*1000);
     
   
  /* $(".proclaim").click(function(){
@@ -134,9 +134,6 @@ persuade()
      var scroll =  $(document).scrollTop();   
   
   
-      if(scroll >= 700){
-        alert("Hi");  
-      }
   
   /*var click = ["#who", "#what", "#why", "#how"];
     for (var i = 0; i < click.length; i++) {
@@ -163,75 +160,154 @@ persuade()
     });
   };*/
 
-
+var next = 0; 
 var index = 0;
 var text = "This program is geared towards students who wish to see tehnoology grow and shape the future, students like you!" ;
 var text2 = "The ambassador program is meant to assist socrative classrooms by deligating student to help in their classrooms with socrative related issues"
 var text3 = "Why is this important? Well your future, this program can be a part of your college resume, you can gain valuable skills, and be a part of a something BIG!"
 var text4 = "Feeling pumped, well scroll down the page to sign up and become a part of this valuable expirience, Get Started Today!"
+
+function showConsole(){
+  width = 0
+      height = 0
+      moreInfo = window.setInterval(function(){
+        height += 10
+        $("#moreInfo").css('height', height + "px");
+        
+        
+        if (height >= 20) {
+            height = 100;
+            width += 4;
+        
+            $("#moreInfo").css('width', width + "%");
+            if (width >= 48) {
+                window.clearInterval(moreInfo)
+            };
+        };
+        
+      }, 1000/10)
+}
+
+$("#who").click(function() {
+    $("#moreInfo").empty();
+    showConsole();
+    window.setTimeout(function(){
+       document.getElementById('moreInfo').innerHTML = text;
+    }, 2000)
+    $("#info").css('background-color', 'black');
+    $("#moreInfo").css("box-shadow","-1px -1px 8px 2px rgba(255, 255, 255, 0.71)")
+
+  });
+
+  $("#what").click(function(){
+    $("#moreInfo").empty();
+    showConsole();
+        window.setTimeout(function(){
+       document.getElementById('moreInfo').innerHTML = text2;
+    }, 2000)
+
+  });
+
+  $("#why").click(function() {
+    $("#moreInfo").empty();
+    showConsole();
+
+        window.setTimeout(function(){
+       document.getElementById('moreInfo').innerHTML = text3;
+    }, 2000)
+   
+  });
+
+  $("#how").click(function(){
+    $("#moreInfo").empty();
+    showConsole();
+        window.setTimeout(function(){
+       document.getElementById('moreInfo').innerHTML = text4;
+    }, 2000)
+
+  })
+
 // Here you can put in the text you want to make it type.
 //first we do who 
-who = function(){
-  document.getElementById('moreInfo').innerHTML += text.charAt(index);
-  index += 1;
-  var t = setTimeout('who()',40);
-  // The time taken for each character here is 100ms. You can change it if you want.
-}
+/* Come back to this later
+type = window.setInterval(function(){
+  $("#who").click(function() {
+    next = 1;
+  });
 
-//Now what
-what = function(){
-  document.getElementById('moreInfo').innerHTML += text2.charAt(index);
-  index += 1;
-  var t2 = setTimeout('what()',40);
-  // The time taken for each character here is 100ms. You can change it if you want.
-}
+  $("#what").click(function(){
+    next = 2;
+  });
 
-//now why
-why = function(){
-  document.getElementById('moreInfo').innerHTML += text3.charAt(index);
-  index += 1;
-  var t3 = setTimeout('why()',40);
-  // The time taken for each character here is 100ms. You can change it if you want.
-}
+  $("#why").click(function() {
+    next = 3;
+  });
 
-//now how
-how = function(){
-  document.getElementById('moreInfo').innerHTML += text4.charAt(index);
-  index += 1;
-  var t4 = setTimeout('how()',40);
-  // The time taken for each character here is 100ms. You can change it if you want.
-}
+  $("#how").click(function(){
+    next = 4;
+  })
 
-//Now make click atrributes for all the buttons
-$("#who").click(function(event) {
-  who();
-
-});
-
-$("#what").click(function(event) {
-  what();
-  document.getElementById('moreInfo').innerHTML += text2.charAt(index);
-  index += 1;
-  var t2 = setTimeout('what()',40);
-});
-
-$("#why").click(function(event) {
-  why();
-
-});
-
-$("#how").click(function(event) {
-  how();
-
-});
+}, 100);
 
 
+  //check for what next equals
+  if(next === 1){
+    textMove = window.setInterval(function(){
+      document.getElementById('moreInfo').innerHTML += text.charAt(index);
+      index++;
+    }, 100);
+  } else if(next === 2){
+    textMove = window.setInterval(function(){
+      document.getElementById('moreInfo').innerHTML += text2.charAt(index);
+      index++;
+    }, 100); 
+  } else if(next === 3){
+    textMove = window.setInterval(function(){
+      document.getElementById('moreInfo').innerHTML += text3.charAt(index);
+      index++;
+    }, 100)
+  } else if(next === 4){
+    textMove = window.setInterval(function(){
+      document.getElementById('moreInfo').innerHTML += text4.charAt(index);
+      index++;
+    }, 100)
+  }
 
+
+  if(index >= text.length){
+        index = 0;
+        window.clearInterval(textMove);
+        $("#moreInfo").empty();
+  }
+
+  if(index >= text2.length){
+        index = 0;
+        window.clearInterval(textMove);
+        $("#moreInfo").empty();
+  }
+
+  if(index >= text3.length){
+        index = 0;
+        window.clearInterval(textMove);
+        $("#moreInfo").empty();
+  }
+
+  if(index >= text4.length){
+        index = 0;
+        window.clearInterval(textMove);
+        $("#moreInfo").empty();
+  }
+*/
+
+alert
+alert
 
 topCheck = window.setInterval(function(){
       var top = $(document).scrollTop()
 
           if(top >= 300){
+            window.clearInterval(arrow);
+            $("#arrow").hide();
           $(".navbar").css({
             "height": '12%',
             "margin-top": '-8%',
@@ -246,14 +322,17 @@ topCheck = window.setInterval(function(){
           });
           $(".nav").css('margin-top', '0.6%');
         }
+        if(top >= 800 || top <= 400){
+          $("#info").css('background-color', 'white');
+          $("#moreInfo").css({
+            height: '0',
+            width: '0'
+          });
+        }
         
         
         
     }, 1000);
 
-    
-  $("#signup").click(function(){
-    window.open( 'https://docs.google.com/forms/d/1s2Efu7jlggVbvEHfJuJy50OY5h1fgRkHRB8rS-XEzvo/viewform?usp=send_form');
-  });
 
 });
